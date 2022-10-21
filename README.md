@@ -10,7 +10,7 @@ LastTime currently only supports `BASH` and `ZSH` via `.bash_history` and `.zsh_
 #### Installation:
 via Script:  
 ```
-sudo wget "https://raw.githubusercontent.com/torry2/lasttime/main/install.sh" | bash
+sudo curl "https://raw.githubusercontent.com/torry2/lasttime/main/install.sh" | bash
 ```
   
 Manually:  

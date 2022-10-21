@@ -10,7 +10,7 @@ LastTime currently only supports `BASH` and `ZSH` via `.bash_history` and `.zsh_
 #### Installation:
 via Script:  
 ```
-NULL
+sudo wget "https://raw.githubusercontent.com/torry2/lasttime/main/install.sh" | bash
 ```
   
 Manually:  
@@ -20,6 +20,8 @@ $ cd lasttime
 $ g++ lasttime.cpp -o lasttime
 $ sudo cp lasttime /usr/local/bin
 $ cd .. && rm -r lasttime # optional cleanup
+```
+
 #### Usage:
   
 Display Help Message:  

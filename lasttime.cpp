@@ -13,7 +13,7 @@ string dotfile;
 vector<string> history;
 
 int help() {
-	char read[] = "help menu\n";
+	char read[] = "INFO: Enter a command as an argument! \n   e.g \"lasttime ping\" \n(more information on the github repo @torry2) \n";
 	cout << read;
 	return 0;
 }

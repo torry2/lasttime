@@ -27,7 +27,9 @@ $ cd .. && rm -r lasttime # optional cleanup
 Display Help Message:  
 ```
 $ lasttime
-helpoutput
+INFO: Enter a command as an argument! 
+e.g "lasttime ping" 
+(more information on the github repo @torry2)
 ```
 Example Command: (ping)  
 ```

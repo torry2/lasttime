@@ -41,6 +41,8 @@ ping archlinux.org
 ##### Features Coming Soon:  
 - Index command history (e.g show the last `n` times you used that command)  
 - `Use` Function to automatically paste a history command into your TTY  
+- Improved help message
+- Improved installation method
   
 ###### Bug & Error Reporting:  
 Open an issue or pull request!  

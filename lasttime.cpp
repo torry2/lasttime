@@ -3,6 +3,7 @@
 #include <algorithm>
 #include <vector>
 #include <cstdlib> 
+#include <cstring>
 #include <stdlib.h>
 
 using namespace std;

@@ -47,7 +47,7 @@ ping torrytw.ooo
  ```
  
 ##### Features Coming Soon:  
-~~- Index command history (e.g show the last `n` times you used that command)  ~~
+~~ - Index command history (e.g show the last `n` times you used that command)~~  
 - `Use` Function to automatically paste a history command into your TTY  
 ~~- Improved help message~~
 - Improved installation method

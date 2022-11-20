@@ -1,8 +1,8 @@
 # LastTime
 #### :See the last time you used that command!
   
-LastTime is a command line tool that searches your shells history file and outputs the last time you used a specified command.  
-A quick and simple alternative to the clunky shell command `cat ~/.historyfile | grep "lasttime"`
+LastTime is a command line tool that searches your shells history file and outputs the last time(s) you used a specified command.  
+A quick and simple alternative to the clunky shell command `cat ~/.historyfile | grep "lasttime" (| head -n x)`  
   
 NOTE:  
 LastTime currently only supports `BASH` and `ZSH` via `.bash_history` and `.zsh_history` dotfiles!  
@@ -17,31 +17,39 @@ Manually:
 ```
 $ git clone https://github.com/torry2/lasttime.git #OR git@github.com:torry2/lasttime
 $ cd lasttime
-$ g++ lasttime.cpp -o lasttime
-$ sudo cp lasttime /usr/local/bin
-$ cd .. && rm -r lasttime # optional cleanup
+$ g++ lasttime.cpp -o lt
+$ sudo cp lt /usr/local/bin
+$ cd .. && rm -r lt # optional cleanup
 ```
 
 #### Usage:
-  
-Display Help Message:  
+
+Help Output:  
 ```
-$ lasttime
-INFO: Enter a command as an argument! 
-e.g "lasttime ping" 
-(more information on the github repo @torry2)
+INFO: lt <command> (<index>)
 ```
+Call `lasttime` with `lt`, specifying a command will output the last time you used that command, if you wish to see the last `n` times you used it, simply specify the `n` times after the command, to see all instances in your history file, you can specify the integer 0.
+   
 Example Command: (ping)  
 ```
-$ lasttime ping
-ping github.com
-ping archlinux.org
+$ lt ping
+ping torrytw.ooo
 ```
   
+ Example Command: (with indexing)
+ ```
+ $ lt ping 5
+ ping torrytw.ooo
+ ping archlinux.org
+ ping github.com
+ ping 8.8.8.8
+ ping minecraft.net
+ ```
+ 
 ##### Features Coming Soon:  
-- Index command history (e.g show the last `n` times you used that command)  
+~~- Index command history (e.g show the last `n` times you used that command)  ~~
 - `Use` Function to automatically paste a history command into your TTY  
-- Improved help message
+~~- Improved help message~~
 - Improved installation method
   
 ###### Bug & Error Reporting:  
